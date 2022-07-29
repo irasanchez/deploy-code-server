@@ -43,8 +43,7 @@ RUN sudo apt install gh
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 RUN export NVM_DIR="$HOME/.nvm" && \. "$NVM_DIR/nvm.sh"
 # This loads nvm
-RUN nvm install latest
-RUN nvm use latest
+
 
 # get pnpm
 RUN curl -fsSL https://get.pnpm.io/install.sh | sh -
